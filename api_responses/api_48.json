@@ -1,0 +1,64 @@
+{
+  "experiments": {},
+  "items": [
+    {
+      "type": "adn",
+      "is_off_meli": false,
+      "start_date": "2026-01-21T20:59:50-03:00",
+      "end_date": "2026-12-31T23:59:59-03:00",
+      "event_tracking": {
+        "print": [
+          {
+            "url": "https://print1.mercadoclics.com/display/prints/MLU/count?d=oVHGxJGYaLCo7H4zQIFRB7R%2FqbE7g%2FY58VJPHKdgSutXu3%2Bff7GHteDnVerqjrcZ4jxjpYQmAYzNQ6RGRGZMwgGP8CKtsCgDRlDh%2BxwwyGKAQnUpiEN978niAB8r%2BXkl7%2FSRtA64n5Wf0mJ9fvUc33McUbbPXgDzGNIQ2LX0QkVdS7u70s72tIue7QJdHKKHJLG160fYABjV1CAUWh7QFe43OMIzXvOTzqi4tdQHq6MapmFUBUohMWwWGvoH4LCTrVn8WaAy5V3rPRy2gaPFgLA6l7S7pp6K5d4b9fsfvzpo%2BXR7OK85z6SW5xFyopy8yCPegSCrJJPJ1hIlNR5rDfHTHB7NNmvPXaZveQfneo8vJ18H9UVql5%2BpNnKH3Llk8nGnFb9RKJAoPFdBF417hmxzeM35DcVUfqzMK5zinT7RKCAAz8P5h9bpmMRbxz9t%2FivYeFLAsV0Gu9110NB7Ui7mNIAH9IMgA73JE1o8EaH%2B6UUZ%2FsUPu4AQ4S%2FptNw1H0g7axBrX%2FZP3aVmeGPgAVLVquAWxHeyOF6xOtDVX%2Fvy6KZSznSvBMKZdKWWd63ByGD%2BmwTnDrw3u%2Bl4Ju%2BhyvqBDx7Pl1pgmtnyAShXcFrSqaNJdN4fj%2F1w4FOaqSHeYqyeDHXAnkuXoeu8ahMBnRxfWwiuqXKydAG13coiJdvmx9PSOEsT8A4lpiJGBvzz8OQxfssvbSTb9l0%2FGns%2FBaN1p9%2B7%2FdMFrg4DXdDH7zyIMkCYR49WdL7WpTvWQjYMpn9fAZ2%2FnFXvVW60dcwRuRXFpFDfhQ%3D%3D"
+          }
+        ],
+        "view": [
+          {
+            "url": "https://print1.mercadoclics.com/display/views/MLU/count?d=gXR6rC%2F0f21hcV3s2Zh8dHtByp6PMrwEPhpBeCBTJ35qrm8s%2FwkySymGwwRnvLzpCTA18xt%2F6HwQrme37PoOaIwVwAeJMVT2rtouEezDdEsKqpvF%2FWif1ZSqoJuaERLMI2a1GgY%2FnbcpohJN0vLhYN1pJtctEqnCE2ISw4f%2BH4EJGso7Ij1aZ%2Fhyoc%2BDZtkKRko%2Bm5%2FJtgXpnQ6d%2BJAmc3vjMaCgIcq%2B3a13vuzNvZtN3aOVxosdKlfxY7W41M2FYBH0zkvEQmAu0JsPY6wvSG4nx87uDSBFd1OqqMJAzIG%2BjrxO8uHkLpNwq6M%2FoeV9NXnS2LokG1ojatNdvenjaLmrzDNZuschZJWZPaHYbjgF8xZQS9o5bY%2B1d0%2FotOu9aHTNOr3HiDfTrgS1NQ7Q0NKg%2Bb3rqtqKzRWZQ03DfROMrefNCeq87lrc0%2FLR4akDTV4IEzD%2B5ndLsRI3ohHf%2BX4SuPObgWjsvRVJK8vcOY1JqCfXNnE10Mab9TiZg756Cjjve9GT2voXCEQ2Z1%2FR1VwpbVZRSKNkiQuU1VaL%2BKTgBC%2Fim9hfmQlPg3kkFhiSSurZFSLwFr6zrkk6Ig8ugOhKtYbBcPCEbKeVqL3ROupc6iaZEjWFuAkHi%2BR6bNnuhcybTQ%2B2nTsNMbMv%2BwI4qy6cHwrXOVGSVVVfnmbxuIrGt8VwTD5aqTeiPP2Okn5QH1z2MagXDgBKn3LxD%2BYJERAL%2FMTvAVTPDVa05p83GtKlelY4ByB3qM7p8fmzMeLoDElMTkCP9%2B1L7z%2FNGJ8YwTzEMkhpg2LKMcUF2lKLEwCVZrTgC020Y5ajFZ8M1TX0e42lXrxKPxDVgY0MQK%2FOh3r4mw%3D%3D"
+          }
+        ],
+        "click": [
+          {
+            "url": "https://click1.mercadolibre.com.uy/display/clicks/MLU/count?a=SrXNEbg2FhwdH6mSsezvJi6hwlHazKbKikEN14Ig292%2FY2ceMtaxRDWUrSxoRSAyJcS30JKX%2Fsd7JPJCqHrqPKJkMSGFKtztdWjOmnN3kmaQt%2BGXzLF4S48Eyswc3hvGrZgLr4obttQGp4SOzUap7pVtr6NhOFQXUMDFGYqjPF4gjloqB3maQLvzIJVDL14bBaFUaF7bFdUuP6KOfuGE8WI3gzSPA9DyvZKitTSbsaIEp4KjLtWEi6JDFR41gHRLawkzPkkk4M92h4kkEhFwleRVD2%2F3goIDRos1g6zwjhxvB13tqIMYSlhyeNdpAFqorH%2FuKmcKeHNG6Ta2W%2FzS5R7M8h%2B3SdNXpHcY%2BdDW%2BRqBjN2mjPvvdI7r%2BRPhMfz%2FuwUlyD2Ip%2BaRQr0%2FpMBvtgAb3p9LVjbcSVhwxujYihA3RwrqQeIbn3Mp6jmdrDljJsgQQksALYfqpkCNGRJ9LvKDMg8AfM1%2FH5%2BZvmGAMSXZA9YZT6IEQ%2FJari7iXVKlpd%2Br9fbgGkgFU2q7oYJIZ9f4uAfFsOsQ8YDpIA%2FWLZK0NG%2Fq0bZD1QLL2BGiu99wG2DX7nvU2nQ4ky%2FiZRTZz1eLTDEv1mWId7UftcNK7BzXHkf6xjK%2F4BPuu6qHVBtcd1KuF%2Bvhq4nH0Gf4MCTHlFHx0kcWOxz1n4%2Fyx%2BsEaU4PM7F3uTU3SYq36FunPzL1ui9oIVqCsTHv"
+          }
+        ]
+      },
+      "event_data": {},
+      "view": {},
+      "verification_resources": [],
+      "content": {
+        "texts": {
+          "cta": "Ver más",
+          "secondary_title": "MEJORES OFERTAS",
+          "volanta": "POR TIEMPO LIMITADO",
+          "primary_title": "ENCONTRÁ LAS"
+        },
+        "images": {
+          "picture": "https://http2.mlstatic.com/D_NQ_752214-MLA75105212263_032024-OO.webp"
+        },
+        "colors": {
+          "card_background_color": "#ffce52",
+          "card_text_color": "#000000"
+        },
+        "actions": {
+          "content_link": {
+            "action_id": "advertising",
+            "link": "https://www.mercadolibre.com.uy/ofertas",
+            "event_data": {},
+            "target": "external_link"
+          }
+        }
+      },
+      "template": {
+        "url": "https://http2.mlstatic.com/frontend-assets/adn-frontend-library/adn-banner-vertical-square-image.2.9.11-fixva.2.js",
+        "tag": "adn-banner-vertical-square-image"
+      },
+      "lazy_loading_print_percentage": 128,
+      "slot_id": "billboard2",
+      "show_feedback_ad": false,
+      "creative_id": "3214601",
+      "placement_id": "ADN_SEARCH_DESKTOP_LEFT02",
+      "print_id": "2305203c-adca-4080-957d-89fa225b9290"
+    }
+  ]
+}
