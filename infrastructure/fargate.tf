@@ -163,3 +163,21 @@ resource "aws_scheduler_schedule" "ingestor" {
     }
   }
 }
+
+resource "aws_iam_role_policy" "ecs_execution_logs_policy" {
+  name = "autolitics-ecs-logs-policy"
+  role = aws_iam_role.ecs_execution_role.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [{
+      Effect = "Allow"
+      Action = [
+        "logs:CreateLogStream",
+        "logs:PutLogEvents",
+        "logs:CreateLogGroup"
+      ]
+      Resource = "${aws_cloudwatch_log_group.ingestor.arn}:*"
+    }]
+  })
+}
