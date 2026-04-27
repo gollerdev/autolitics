@@ -14,3 +14,7 @@ output "aws_secret_access_key" {
   value     = aws_iam_access_key.app.secret
   sensitive = true
 }
+
+output "ecr_repository_url" {
+  value = aws_ecr_repository.ingestor.repository_url
+}

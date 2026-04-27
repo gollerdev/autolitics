@@ -7,6 +7,8 @@ import datetime
 from playwright.sync_api import sync_playwright
 from storage_service.s3_storage_service import S3StorageService as StorageService
 from queue_service.sqs_queue_service import SQSQueueService
+from dotenv import load_dotenv
+load_dotenv(override=False)
  
 BASE_URL = "https://autos.mercadolibre.com.uy/_Desde_{offset}_PublishedToday_YES_NoIndex_True"
  

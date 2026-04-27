@@ -2,10 +2,8 @@ import json
 import os
 import boto3
 from datetime import datetime
-from dotenv import load_dotenv
- 
-load_dotenv()
- 
+from dotenv import load_dotenv 
+
 print(os.getenv("QUEUE_URL"))
 
 class SQSQueueService:
