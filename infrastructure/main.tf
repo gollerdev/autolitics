@@ -1,7 +1,8 @@
 provider "aws" {
-  region = "us-east-2"
+  region = var.aws_region
 }
 
+# S3 bucket
 resource "aws_s3_bucket" "data" {
   bucket = var.bucket_name
 }
@@ -43,6 +44,40 @@ resource "aws_iam_policy" "app_policy" {
         Effect = "Allow"
         Action = ["sqs:SendMessage", "sqs:ReceiveMessage", "sqs:DeleteMessage"]
         Resource = aws_sqs_queue.raw_queue.arn
+      },
+      {
+        Effect = "Allow"
+        Action = ["ecr:GetAuthorizationToken"]
+        Resource = "*"
+      },
+      {
+        Effect = "Allow"
+        Action = [
+          "ecr:BatchCheckLayerAvailability",
+          "ecr:GetDownloadUrlForLayer",
+          "ecr:BatchGetImage",
+          "ecr:PutImage",
+          "ecr:InitiateLayerUpload",
+          "ecr:UploadLayerPart",
+          "ecr:CompleteLayerUpload"
+        ]
+        Resource = aws_ecr_repository.ingestor.arn
+      },
+      {
+        Effect = "Allow"
+        Action = [
+          "ecs:RegisterTaskDefinition",
+          "ecs:DescribeTaskDefinition"
+        ]
+        Resource = "*"
+      },
+      {
+        Effect = "Allow"
+        Action = ["iam:PassRole"]
+        Resource = [
+          aws_iam_role.ecs_execution_role.arn,
+          aws_iam_role.ecs_task_role.arn
+        ]
       }
     ]
   })
