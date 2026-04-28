@@ -70,7 +70,7 @@ resource "aws_ecs_task_definition" "ingestor" {
       { name = "AWS_REGION",        value = var.aws_region },
       { name = "S3_BUCKET",         value = var.bucket_name },
       { name = "QUEUE_URL",         value = aws_sqs_queue.raw_queue.url },
-      { name = "PROXY_SERVER",      value = "http://0.tcp.sa.ngrok.io:19835" },
+      { name = "PROXY_SERVER",      value = "http://186.49.243.189:8080" },
       { name = "PROXY_USERNAME",    value = "" },
       { name = "PROXY_PASSWORD",    value = "" }
     ]
