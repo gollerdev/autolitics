@@ -82,6 +82,18 @@ def run():
     started_at = datetime.datetime.utcnow().isoformat()
     storage = StorageService(base_path="data")
     queue = SQSQueueService()
+
+    proxy_server = os.getenv("PROXY_SERVER")
+    proxy = None
+    if proxy_server:
+        proxy = {
+            "server": proxy_server,
+            "username": os.getenv("PROXY_USERNAME"),
+            "password": os.getenv("PROXY_PASSWORD"),
+        }
+        print(f"Using proxy: {proxy_server}")
+    else:
+        print("No proxy configured")
  
     print(f"Run ID: {run_id}")
  
@@ -91,6 +103,7 @@ def run():
             args=["--disable-blink-features=AutomationControlled"]
         )
         context = browser.new_context(
+            proxy=proxy,
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
             viewport={"width": 1280, "height": 800},
             locale="es-UY",
