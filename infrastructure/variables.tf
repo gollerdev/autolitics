@@ -13,3 +13,11 @@ variable "queue_name" {
 variable "app_user_name" {
   default = "autolitics-app"
 }
+
+variable "processed_bucket_name" {
+  default = "autolitics-processed"
+}
+
+variable "processed_queue_name" {
+  default = "autolitics-processed-queue"
+}
