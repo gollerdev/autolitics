@@ -30,8 +30,9 @@ resource "aws_s3_bucket_public_access_block" "processed" {
 
 # SQS queue — raw HTML runs (ingestor → processor)
 resource "aws_sqs_queue" "raw_queue" {
-  name                      = var.queue_name
-  message_retention_seconds = 86400
+  name                       = var.queue_name
+  message_retention_seconds  = 86400
+  visibility_timeout_seconds = 360
 }
 
 # SQS queue — processed JSONL runs (processor → loader)
