@@ -34,7 +34,7 @@ ECS Fargate (scraper) → S3 (raw HTML) → SQS → Parser Lambda → S3 (JSONL)
 - Domain: autolitics.org
 - DNS record: proxy.autolitics.org (A record, TTL 60, not proxied)
 - Zone ID: d960f2c99a358dc9a22fec772521f51a
-- API Token: <REDACTED> (expires Jan 31 2027)
+- API Token: `<REDACTED>` (expires Jan 31 2027)
 
 ## Ingestor Service (WORKING)
 Location: `services/ingestor/data_ingestion_service.py`
