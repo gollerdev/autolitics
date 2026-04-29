@@ -2,7 +2,7 @@ provider "aws" {
   region = var.aws_region
 }
 
-# S3 bucket
+# S3 bucket — raw HTML
 resource "aws_s3_bucket" "data" {
   bucket = var.bucket_name
 }
@@ -15,9 +15,28 @@ resource "aws_s3_bucket_public_access_block" "data" {
   restrict_public_buckets = true
 }
 
-# SQS queue
+# S3 bucket — processed JSONL
+resource "aws_s3_bucket" "processed" {
+  bucket = var.processed_bucket_name
+}
+
+resource "aws_s3_bucket_public_access_block" "processed" {
+  bucket                  = aws_s3_bucket.processed.id
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
+}
+
+# SQS queue — raw HTML runs (ingestor → processor)
 resource "aws_sqs_queue" "raw_queue" {
   name                      = var.queue_name
+  message_retention_seconds = 86400
+}
+
+# SQS queue — processed JSONL runs (processor → loader)
+resource "aws_sqs_queue" "processed_queue" {
+  name                      = var.processed_queue_name
   message_retention_seconds = 86400
 }
 
@@ -42,8 +61,21 @@ resource "aws_iam_policy" "app_policy" {
       },
       {
         Effect = "Allow"
+        Action = ["s3:PutObject"]
+        Resource = [
+          aws_s3_bucket.processed.arn,
+          "${aws_s3_bucket.processed.arn}/*"
+        ]
+      },
+      {
+        Effect = "Allow"
         Action = ["sqs:SendMessage", "sqs:ReceiveMessage", "sqs:DeleteMessage"]
         Resource = aws_sqs_queue.raw_queue.arn
+      },
+      {
+        Effect = "Allow"
+        Action = ["sqs:SendMessage", "sqs:ReceiveMessage", "sqs:DeleteMessage"]
+        Resource = aws_sqs_queue.processed_queue.arn
       },
       {
         Effect = "Allow"
