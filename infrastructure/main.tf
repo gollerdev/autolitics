@@ -93,7 +93,10 @@ resource "aws_iam_policy" "app_policy" {
           "ecr:UploadLayerPart",
           "ecr:CompleteLayerUpload"
         ]
-        Resource = aws_ecr_repository.ingestor.arn
+        Resource = [
+          aws_ecr_repository.ingestor.arn,
+          aws_ecr_repository.processor.arn
+        ]
       },
       {
         Effect = "Allow"
