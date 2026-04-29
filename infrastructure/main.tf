@@ -2,6 +2,8 @@ provider "aws" {
   region = var.aws_region
 }
 
+data "aws_caller_identity" "current" {}
+
 # S3 bucket — raw HTML
 resource "aws_s3_bucket" "data" {
   bucket = var.bucket_name
@@ -106,6 +108,11 @@ resource "aws_iam_policy" "app_policy" {
           "ecs:DescribeTaskDefinition"
         ]
         Resource = "*"
+      },
+      {
+        Effect   = "Allow"
+        Action   = ["lambda:UpdateFunctionCode", "lambda:GetFunction", "lambda:GetFunctionConfiguration"]
+        Resource = "arn:aws:lambda:${var.aws_region}:${data.aws_caller_identity.current.account_id}:function:autolitics-processor"
       },
       {
         Effect = "Allow"
