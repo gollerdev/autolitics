@@ -1,0 +1,1 @@
+{"run_id": "20260429_200057", "cars_extracted": 447, "s3_uri": "s3://autolitics-processed/processed/20260429_200057/cars.parquet", "bucket": "autolitics-processed", "key": "processed/20260429_200057/cars.parquet", "source_url": "https://autos.mercadolibre.com.uy", "country": "UY", "enqueued_at": "2026-04-29T20:03:43.372187"}
