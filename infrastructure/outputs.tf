@@ -26,3 +26,11 @@ output "processed_bucket_name" {
 output "processed_queue_url" {
   value = aws_sqs_queue.processed_queue.url
 }
+
+output "rds_endpoint" {
+  value = aws_db_instance.main.address
+}
+
+output "loader_ecr_repository_url" {
+  value = aws_ecr_repository.loader.repository_url
+}

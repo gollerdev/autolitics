@@ -1,0 +1,312 @@
+BRAND                                    Marca                                    string
+MODEL                                    Modelo                                   string
+VEHICLE_YEAR                             Año                                      number
+TRIM                                     Versión                                  string
+MARKET                                   Mercado                                  string
+COLOR                                    Color                                    string
+HAS_AUTOPILOT                            Piloto automático                        boolean
+VEHICLE_TYPE                             Tipo de vehículo                         string
+FUEL_TYPE                                Tipo de combustible                      list
+DOORS                                    Puertas                                  number
+STEERING                                 Dirección                                list
+TRANSMISSION                             Transmisión                              list
+TRACTION_CONTROL                         Control de tracción                      list
+FIPE_CODE                                Código FIPE                              string
+MOLICAR_CODE                             Código Molicar                           string
+HAS_ABS_BRAKES                           Frenos ABS                               boolean
+HAS_AIR_CONDITIONING                     Aire acondicionado                       boolean
+HAS_ALARM                                Alarma                                   boolean
+HAS_ALLOY_WHEELS                         Llantas de aleación                      boolean
+HAS_AMFM_RADIO                           AM/FM                                    boolean
+HAS_AUXILIARY_PORT                       Entrada auxiliar                         boolean
+HAS_BLUETOOTH                            Bluetooth                                boolean
+HAS_BULL_BAR                             Defensa delantera                        boolean
+HAS_CD_PLAYER                            CD                                       boolean
+HAS_DRIVER_AIRBAG                        Airbag conductor                         boolean
+HAS_DVD                                  DVD                                      boolean
+HAS_HEIGHT_ADJUSTABLE_STEERING_WHEEL     Regulación de altura del volante         boolean
+HAS_ELECTRIC_MIRRORS                     Control eléctrico para los retrovisores  boolean
+HAS_ELECTRONIC_BRAKE_ASSIST              Repartidor electrónico de fuerza de frenado boolean
+HAS_ENGINE_INMOVILIZER                   Sistema de bloqueo de encendido          boolean
+HAS_FOG_LIGHT                            Faros antiniebla                         boolean
+HAS_FRONT_FOGLIGHTS                      Faros antinieblas delanteros             boolean
+HAS_GPS                                  GPS                                      boolean
+HAS_HEADLIGHT_CONTROL                    Faros con regulación automática          boolean
+HAS_HEADREST_REAR_SEAT                   Apoya cabeza en asientos traseros        boolean
+HAS_HEIGHT_ADJUSTABLE_DRIVER_SEAT        Asiento conductor regulable en altura    boolean
+HAS_LEATHER_UPHOLSTERY                   Tapizado de cuero                        boolean
+HAS_SEMI_LEATHER_UPHOLSTERY              Tapizado de semicuero                    boolean
+HAS_FABRIC_UPHOLSTERY                    Tapizado de tela                         boolean
+HAS_LIGHT_ON_REMINDER                    Alarma de luces encendidas               boolean
+HAS_LIGHT_SENSOR                         Sensor de luz                            boolean
+HAS_MP3_PLAYER                           Reproductor de MP3                       boolean
+HAS_ONBOARD_COMPUTER                     Computadora de abordo                    boolean
+HAS_PAINTED_BUMPER                       Paragolpes pintados                      boolean
+HAS_PARKING_SENSOR                       Sensor de estacionamiento                boolean
+HAS_PASSENGER_AIRBAG                     Airbag para conductor y pasajero         boolean
+HAS_POWER_WINDOWS                        Cristales eléctricos                     boolean
+HAS_RAIN_SENSOR                          Sensor de lluvia                         boolean
+HAS_REAR_FOGLIGHTS                       Faros antinieblas traseros               boolean
+HAS_REAR_FOLDING_SEAT                    Asiento trasero rebatible                boolean
+HAS_REAR_WINDOW_DEFOGGER                 Desempañador trasero                     boolean
+HAS_REMOTE_TRUNK_RELEASE                 Apertura remota de baúl                  boolean
+HAS_ROLL_BAR                             Barra anti vuelco                        boolean
+HAS_SD_CARD                              Tarjeta SD                               boolean
+HAS_SIDE_IMPACT_AIRBAG                   Airbag laterales                         boolean
+HAS_SLIDING_ROOF                         Techo solar eléctrico retráctil          boolean
+HAS_SPARE_TYRE_SUPPORT                   Soporte para rueda de auxilio            boolean
+HAS_STABILITY_CONTROL                    Control de estabilidad                   boolean
+HAS_STEERING_WHEEL_CONTROL               Comando remoto para radio en el volante  boolean
+HAS_THIRD_STOP                           Tercera luz de freno led                 boolean
+HAS_TRAY_COVER                           Capota marítima                          boolean
+HAS_TRAY_MAT                             Cobertor de caja                         boolean
+HAS_USB                                  Entrada USB                              boolean
+HAS_WINDSCREEN_WIPER                     Limpia/lava luneta                       boolean
+HAS_XENON_HEADLIGHTS                     Faros de xenón                           boolean
+ENGINE                                   Motor                                    string
+HAS_CURTAIN_AIRBAG                       Airbag de cortina                        boolean
+HAS_ELECTRIC_SEATS                       Asientos eléctricos                      boolean
+HAS_REAR_BACKREST                        Respaldo trasero                         boolean
+HAS_CENTRAL_POWER_DOOR_LOCKS             Cierre centralizado de puertas           boolean
+HAS_COASTERS                             Porta vasos                              boolean
+PRESALE_END_DATE                         Fecha término de preventa                string
+HAS_CLIMATE_CONTROL                      Climatizador                             boolean
+VEHICLE_BODY_TYPE                        Tipo de carrocería                       list
+PREVIOUS_PRICE                           Precio anterior                          number_unit
+IS_GUARANTEED_PRE_OWNED                  Seminuevo garantizado                    boolean
+WITH_MANUAL_GLASSES                      Con vidrios manuales                     boolean
+HAS_AUTO_WINDOW_CLOSER                   Cierre automático de vidrios             boolean
+ENGINE_DISPLACEMENT                      Cilindrada                               number_unit
+HAS_LUGGAGE_ROOF_RACK                    Porta equipaje en techo                  boolean
+HAS_HISTORIC_INFORMATION                 Histórico vehicular                      boolean
+WITH_BACKUP_CAMERA                       Con cámara de retroceso                  boolean
+WITH_BED_COVER                           Con tapa de caja                         boolean
+WITH_THIRD_ROW                           Con tercera fila                         boolean
+WITH_NERF_BARS                           Con estribos                             boolean
+WITH_SPOILER                             Con alerón                               boolean
+WITH_AUDIO_AMPLIFIER                     Con amplificador de audio                boolean
+WITH_FACTORY_WARRANTY                    Con garantía de fábrica                  boolean
+WITH_MECHANICAL_WARRANTY                 Con garantía mecánica                    boolean
+IS_OFFERED_BY_BRAND                      Es ofrecido por la marca                 boolean
+WITH_OFF_ROAD_LIGHTS                     Con luces exploradoras                   boolean
+KILOMETERS                               Kilómetros                               number_unit
+CONTACT_SCHEDULE                         Horario de contacto                      string
+CMG_SITE                                 Sitio de origen                          string
+SELLER_CATALOG_VERSION_ID                Id catálogo vendedor                     string
+LICENSE_PLATE                            Patente                                  string
+VIN                                      VIN                                      string
+VIN_LAST_DIGITS                          Últimos dígitos de la VIN                string
+VEHICLE_GALLERY_INTERIOR                 Diseño interior                          string
+VEHICLE_GALLERY_EXTERIOR                 Diseño exterior                          string
+BRAND_BENEFITS                           Beneficios de la marca                   string
+CAROUSEL_BULLETS                         Viñetas carrusel                         string
+HIGHLIGHT_TEXT                           Texto destacado                          string
+SPECS_FILE_URL                           Archivo pdf                              string
+VEHICLE_LOGO_ID                          Logo vehiculo                            string
+GUMMY                                    Color de engomado                        list
+HOLOGRAM                                 Holograma                                list
+SINGLE_OWNER                             Único dueño                              boolean
+ARMORED                                  Blindado                                 boolean
+WITH_SAFETY_FILMS                        Con films de seguridad                   boolean
+WITH_NEW_WHEELS                          Con llantas nuevas                       boolean
+WITH_LUXURY_WHEELS                       Con llantas de lujo                      boolean
+WITH_TECHNOMECHANICAL_REVIEW             Con revisión tecnomecánica               boolean
+IS_INSURED_VEHICLE                       Vehículo asegurado                       boolean
+WITH_NEGOTIABLE_PRICE                    Con precio negociable                    boolean
+SALE_WITH_EXCHANGE                       Acepta permuta                           boolean
+CAR_DELIVERY                             Entrega a domicilio                      boolean
+VIRTUAL_TOURS                            Tours virtuales                          boolean
+HOME_TEST_DRIVE                          Test drive a domicilio                   boolean
+SANITIZATION_POLICY                      Sanitiza el vehículo                     boolean
+PAPERWORK_FROM_HOME                      Documentación en casa                    boolean
+WITH_PAID_IPVA                           Con IPVA pago                            boolean
+HAS_VEHICLE_INSPECTION                   Inspección vehicular                     boolean
+THEFT_REPORTS_NUMBER                     Cantidad de denuncias de robo            number
+REMARKED_CHASSIS_NUMBER                  Cantidad de chasis remarcado             number
+USED_AS_POLICE_CAR_NUMBER                Cantidad de veces utilizado como vehículo policial number
+SUFFERED_DAMAGE_NUMBER                   Cantidad de daños sufridos               number
+SCHEDULED_FOR_SCRAPPING_NUMBER           Cantidad de veces que fue desmantelado   number
+INSURANCE_DEREGISTRATION_NUMBER          Fue dado de baja por la aseguradora      number
+PENDING_FINES_NUMBER                     Cantidad de multas pendientes            number
+OWNERS_NUMBER                            Cantidad de dueños                       number
+PRIOR_AUCTIONS_NUMBER                    Número de subastas anteriores            number
+VERIFIED_VEHICLES                        Vehiculos verificados                    boolean
+VERIFICATION_TYPE                        Tipo de verificación                     string
+LEGALIZED_INTERNATIONAL_ENTRY            Entrada internacional legalizada         boolean
+VEHICLE_RISK_PROFILE_IDENTIFIER          Identificador del perfil de riesgo del vehículo number
+BATTERY_TYPE                             Tipo de batería                          list
+BATTERY_CAPACITY                         Capacidad de la batería                  number_unit
+CHARGE_TIME                              Tiempo de carga                          number_unit
+CHARGER_TYPE                             Tipo de cargador                         string
+CARS_BATTERY_AUTONOMY                    Autonomia de la batería                  number_unit
+HISTORIC_INFORMATION_DATE                Fecha de información histórica           string
+HAS_LEADS_PENALIZATION                   Tiene penalización por Leads             boolean
+ENGINE_CONDITION                         Estado del motor                         string
+BODYWORK_CONDITION                       Estado de la carrocería                  string
+BRAKES_CONDITION                         Estado de los frenos                     string
+TIRES_CONDITION                          Estado de los neumáticos                 string
+CABIN_CONDITION                          Estado de la cabina                      string
+WITH_VERIFICATION_REPORT                 Con verificación vehicular               boolean
+VEHICLE_INSPECTION_STATUS                Estado de la inspección mecánica         string
+VEHICLE_INSPECTION_DATE                  Fecha de la inspección mecánica          string
+VEHICLE_INSPECTION_ID                    Identificador de la inspección mecánica  string
+VEHICLE_INSPECTION_PROVIDER_NAME         Nombre del proveedor de la inspección mecánica string
+VEHICLE_CLASSIFICATION                   Clasificación del vehículo               string
+HAS_GOOD_QUALITY                         Tiene buena calidad                      boolean
+SUGGESTED_PARENT_ID                      ID de padre sugerido                     string
+DETAILED_MODEL                           Modelo detallado                         string
+LINE                                     Línea                                    string
+GEAR_NUMBER                              Numero de velocidades                    number
+PASSENGER_CAPACITY                       Capacidad de personas                    number
+POWER                                    Potencia                                 number_unit
+LENGTH                                   Largo                                    number_unit
+HEIGHT                                   Altura                                   number_unit
+TRANSMISSION_DETAIL                      Detalle transmisión                      list
+WIDTH                                    Ancho                                    number_unit
+DISTANCE_BETWEEN_AXES                    Distancia entre ejes                     number_unit
+LUGGAGE_CAPACITY                         Baúl                                     number_unit
+FUEL_CAPACITY                            Capacidad del tanque                     number_unit
+CYLINDERS                                Cilindros                                number
+VALVES_PER_CYLINDER                      Válvulas por cilindro                    number
+HAS_SIDE_IMPACT_FRONT_AIRBAG             Airbag laterales delanteros              boolean
+HAS_SIDE_IMPACT_REAR_AIRBAG              Airbag laterales traseros                boolean
+HAS_ISOFIX                               Sistema ISOFIX                           boolean
+HAS_ASR_TRACTION                         Tracción ASR                             boolean
+HAS_REMOTE_DOOR_OPENER                   Apertura remota de puertas               boolean
+HAS_ELECTRIC_SEATS_TILT_DRIVER           Asiento delantero conductor con regulación eléctrica de inclinación boolean
+HAS_ELECTRIC_SEATS_BACKREST_TILT_DRIVER  Asiento delantero conductor con regulación eléctrica de la inclinación del respaldo boolean
+HAS_ELECTRIC_SEATS_LENGTH_DRIVER         Asiento delantero conductor con regulación eléctrica longitudinal boolean
+HAS_FRONT_INTEGRAL_SEATS                 Asiento delantero integral               boolean
+HAS_FRONT_INTEGRAL_DUALPART_SEATS        Asiento delantero integral bipartido     boolean
+HAS_ELECTRIC_SEATS_HEIGHT_PASSENGER      Asiento delantero pasajero con regulación eléctrica de altura boolean
+HAS_ELECTRIC_SEATS_TILT_PASSENGER        Asiento delantero pasajero con regulación eléctrica de inclinación boolean
+HAS_ELECTRIC_SEATS_BACKREST_TILT_PASSENGER Asiento delantero pasajero con regulación eléctrica de la inclinación del respaldo boolean
+HAS_ELECTRIC_SEATS_LENGTH_PASSENGER      Asiento delantero pasajero con regulación eléctrica longitudinal boolean
+HAS_HEIGHT_ADJUSTABLE_PASSENGER_SEAT     Asiento acompañante regulable en altura  boolean
+HAS_CENTRAL_ARMREST_REAR_SEAT            Asiento trasero con apoyabrazo central   boolean
+HAS_LENGHT_ADJUSTABLE_REAR_SEAT          Asiento trasero con regulación longitudinal boolean
+HAS_DUALPART_BACKREST_REAR_SEAT          Asiento trasero con respaldo bipartido   boolean
+HAS_HEATED_FRONT_SEATS                   Asientos delanteros calefaccionados      boolean
+HAS_INDIVIDUAL_FRONT_SEATS               Asientos delanteros individuales         boolean
+HAS_CRUISE_CONTROL                       Control de velocidad crucero             boolean
+HAS_POWER_FRONT_WINDOWS                  Levantavidrios eléctricos delanteros     boolean
+HAS_POWER_REAR_WINDOWS                   Levantavidrios eléctricos traseros       boolean
+HAS_COASTERS_CENTRAL_REAR                Posavasos en apoyabrazos central trasero boolean
+HAS_LENGTH_ADJUSTABLE_STEERING_WHEEL     Regulación longitudinal del volante      boolean
+HAS_FRONT_PARKING_SENSOR                 Sensor delantero de distancia para estacionamiento boolean
+HAS_REAR_PARKING_SENSOR                  Sensor trasero de distancia para estacionamiento boolean
+HAS_CHROME_ACCENT_PANEL                  Tablero con detalles cromados            boolean
+HAS_ALUMINIUM_ACCENT_PANEL               Tablero con detalles en aluminio         boolean
+HAS_SPECIAL_COLOR_ACCENT_PANEL           Tablero con detalles en color especial   boolean
+HAS_WOOD_ACCENT_PANEL                    Tablero con detalles en madera           boolean
+HAS_STEERING_WHEEL_LEATHER               Volante revestido en cuero               boolean
+HAS_CHROME_HANDLES                       Manijas externas de puertas cromadas     boolean
+HAS_PAINTED_FRONT_BUMPER                 Paragolpe delantero del color del vehículo boolean
+HAS_SPECIAL_PAINTED_FRONT_BUMPER         Paragolpe delantero pintados de color especial boolean
+HAS_PAINTED_REAR_BUMPER                  Paragolpe trasero del color del vehículo boolean
+HAS_SPECIAL_PAINTED_BACK_BUMPER          Paragolpe trasero pintados de color especial boolean
+HAS_ANDROID_AUTO                         Android auto                             boolean
+HAS_APPLE_CARPLAY                        Apple CarPlay                            boolean
+ACCELERATION                             Aceleración                              number_unit
+ACCELERATION_GASOLINE                    Aceleración nafta                        number_unit
+ACCELERATION_ALCOHOL                     Aceleración alcohol                      number_unit
+ACCELERATION_DIESEL                      Aceleración diesel                       number_unit
+AVERAGE_FUEL_ECONOMY                     Consumo promedio combustible             number_unit
+AVERAGE_FUEL_ENCONOMY_GASOLINE           Consumo promedio nafta                   number_unit
+AVERAGE_FUEL_ENCONOMY_ALCOHOL            Consumo promedio alcohol                 number_unit
+AVERAGE_FUEL_ENCONOMY_DIESEL             Consumo promedio diesel                  number_unit
+AUTONOMY                                 Autonomía                                number_unit
+AUTONOMY_GASOLINE                        Autonomía con nafta                      number_unit
+AUTONOMY_ALCOHOL                         Autonomía con alcohol                    number_unit
+AUTONOMY_DIESEL                          Autonomía con diesel                     number_unit
+MAXIMUM_VELOCITY                         Velocidad máxima                         number
+MAXIMUM_VELOCITY_GASOLINE                Velocidad máxima con nafta               number_unit
+MAXIMUM_VELOCITY_ALCOHOL                 Velocidad máxima con alcohol             number_unit
+MAXIMUM_VELOCITY_DIESEL                  Velocidad máxima con diesel              number_unit
+SHORT_VERSION                            Versiones                                string
+ROUTE_AVERAGE_CONSUMPTION                Consumo medio en ruta                    number_unit
+CITY_AVERAGE_CONSUMPTION                 Consumo medio en ciudad                  number_unit
+HAS_BLIND_SIDE_ZONE_ALERT                Aviso de punto ciego                     boolean
+WITH_PANORAMIC_GLASS_ROOF                Con techo de vidrio panorámico           boolean
+WITH_SKY_WINDOW                          Con techo solar sky window               boolean
+WITH_PANORAMIC_SOLAR_ROOF                Con techo solar panorámico               boolean
+WITH_LED_FOGLIGHTS                       Con faros de neblina LED                 boolean
+WITH_AUXILIARY_LIGHTS_ACTIVATION_IN_CASE_OF_SUDDEN_STOP Con accionamiento de luces auxiliares en caso de frenado brusco boolean
+WITH_RETRACTABLE_FRONT_SEAT_BELTS        Con cinturones de seguridad delanteros retráctiles boolean
+WITH_RETRACTABLE_FRONT_SEAT_BELTS_WITH_ELECTRIC_ADJUSTMENT Con cinturones de seguridad delanteros retráctiles con regulación eléctrica de altura boolean
+WITH_RETRACTABLE_FRONT_SEAT_BELTS_WITH_HEIGHT_ADJUSTMENT Con cinturones de seguridad delanteros retráctiles con regulación de altura boolean
+WITH_RETRACTABLE_REAR_SEAT_BELTS         Con cinturones de seguridad traseros retráctiles boolean
+WITH_RETRACTABLE_REAR_SEAT_BELTS_WITH_ELECTRIC_ADJUSTMENT Con cinturones de seguridad traseros retráctiles con regulación eléctrica de altura boolean
+WITH_RETRACTABLE_REAR_SEAT_BELTS_WITH_HEIGHT_ADJUSTMENT Con cinturones de seguridad traseros retráctiles con regulación de altura boolean
+WITH_AUTOMATIC_UNLOCK_DOORS_IN_ACCIDENT  Con destrabamiento automático de puertas en caso de accidente boolean
+WITH_CORNERING_BRAKE_CONTROL_SYSTEM_CBC  Con sistema de control de frenado en curva (CBC) boolean
+WITH_AUTOMATIC_AIR_CONDITIONING_WITH_INDIVIDUAL_CONTROLS Con aire acondicionado automático con controles individuales boolean
+WITH_AUTOMATIC_AIR_CONDITIONING_WITH_INDIVIDUAL_CONTROLS_REAR_PART_3_ZONES Con aire acondicionado automático con controles individuales del/tras (3 zonas) boolean
+WITH_AUTOMATIC_AIR_CONDITIONING_WITH_INDIVIDUAL_CONTROLS_REAR_PART_4_ZONES Con aire acondicionado automático con controles individuales del/tras (4 zonas) boolean
+WITH_AUTOMATIC_AIR_CONDITIONING_WITH_INDIVIDUAL_FRONT_AND_REAR_CONTROLS Con aire acondicionado automático con controles individuales delanteros/traseros boolean
+WITH_AIR_CONDITIONING_WITH_AUTOMATIC_TEMPERATURE_CONTROL Con aire acondicionado con control automático de la temperatura boolean
+WITH_AIR_CONDITIONING_WITH_INDIVIDUAL_CONTROLS Con aire acondicionado con controles individuales boolean
+WITH_ELECTROCHROMIC_INTERNAL_REAR_VIEW_MIRROR Con espejo retrovisor interno electro crómico boolean
+WITH_EXTERNAL_MIRRORS_WITH_AUTOMATIC_TILTING_IN_REVERSE Con espejos externos con inclinación automática en marcha atrás boolean
+WITH_EXTERNAL_REARVIEW_MIRRORS_WITH_ELECTRICAL_FOLDING Con espejos retrovisores externos rebatibles eléctricamente boolean
+WITH_HEADLIGHTS_WITH_AUTOMATIC_ACTIVATION Con faros con accionamiento automático-encendido boolean
+WITH_DRIVER_FRONT_SEAT_WITH_ELECTRIC_ADJUSTMENT Con asiento del conductor con regulación eléctrica de altura boolean
+WITH_PASSENGER_FRONT_SEAT_WITH_ELECTRIC_ADJUSTMENT Con asiento del pasajero con regulación eléctrica de altura boolean
+WITH_DRIVER_ARMREST                      Con apoyabrazos conductor                boolean
+WITH_ARMREST_BETWEEN_FRONT_SEATS         Con apoyabrazos entre los asientos delanteros boolean
+WITH_FRONT_SEATS_INDIVIDUAL_ARMRESTS     Con apoyabrazos delanteros individuales  boolean
+WITH_GEARS_CHANGE_IN_STEERING_WHEEL      Con cambio de marchas en el volante      boolean
+WITH_LANE_CHANGING_SENSOR                Con sensor de cambio de carril           boolean
+WITH_ACTIVE_LANE_CHANGING_SENSOR         Con sensor de cambio de carril activo    boolean
+WITH_PARKING_SENSOR_BY_FRONT_CAMERA      Con sensor de estacionamiento por cámara delantera boolean
+WITH_PARKING_SENSOR_BY_REAR_CAMERA       Con sensor de estacionamiento por cámara trasera boolean
+WITH_AUTOMATIC_PARKING_SENSOR            Con sistema de estacionamiento automático boolean
+WITH_PARKING_SENSOR_WITH_GRAPHICS        Con sistema de estacionamiento con gráficos boolean
+WITH_ECO_MODE                            Con modo Eco                             boolean
+WITH_ENGINE_WITH_EMISSION_REDUCTION_TECHNOLOGY Con motor con tecnología de reducción de emisiones (Efficiency) boolean
+WITH_STEEL_WHEELS                        Con llantas de acero                     boolean
+WITH_CHROMED_ALLOY_WHEELS                Con llantas de aleación cromadas         boolean
+WITH_SPECIAL_PAINTED_ALLOY_WHEELS        Con llantas de aleación en color especial boolean
+WITH_CHROMED_DOOR_HANDLES                Con manija de puertas cromadas           boolean
+WITH_PAINTED_DOOR_HANDLES                Con manija de puertas en color del vehículo boolean
+WITH_SPECIAL_PAINTED_DOOR_HANDLES        Con manija de puertas en color especial  boolean
+WITH_CHROMED_FRONT_BUMPER                Con paragolpes delantero cromado         boolean
+WITH_CHROMED_REAR_BUMPER                 Con paragolpes trasero cromado           boolean
+WITH_LED_HEADLIGHTS                      Con faros delanteros LED                 boolean
+WITH_DAYTIME_LED_LIGHTS                  Con faros diurnos LED                    boolean
+WITH_LED_REAR_LIGHTS                     Con faros traseros LED                   boolean
+WITH_HEADLIGHT_WASHER                    Con lavador de faros                     boolean
+WITH_HEADLIGHT_CLEANER                   Con limpiador de faros                   boolean
+WITH_CRANKCASE_GUARD                     Con protector de cárter                  boolean
+WITH_FUEL_TANK_PROTECTOR                 Con protector de tanque de combustible   boolean
+WITH_STEEL_SPARE_WHEEL                   Con rueda de auxilio de acero            boolean
+WITH_ALLOY_SPARE_WHEEL                   Con rueda de auxilio de aleación         boolean
+WITH_TEMPORARY_SPARE_WHEEL               Con rueda de auxilio temporal            boolean
+MILEAGE_WARRANTY                         Garantía en kilómetros                   number
+YEAR_WARRANTY                            Garantía en años                         number
+WITH_BLU_RAY                             Con Blu-ray                              boolean
+WITH_TOUCH_SCREEN_LCD                    Con LCD con sistema touch screen         boolean
+WITH_PANEL_LCD                           Con LCD en panel                         boolean
+WITH_DASHBOARD_LCD                       Con LCD en panel de instrumentos         boolean
+WITH_FRONT_SEAT_BACKREST_LCD             Con LCD en respaldo asiento delantero    boolean
+WITH_ROOF_LCD                            Con LCD en techo                         boolean
+WITH_LCD_BETWEEN_FRONT_SEATS             Con LCD entre asientos delanteros        boolean
+WITH_LCD_FOR_REAR_SEATS                  Con LCD para asientos traseros           boolean
+WITH_VOICE_ACTIVATED_GPS                 Con sistema de GPS con indicación por voz boolean
+WITH_VOICE_COMMAND_SYSTEM                Con sistema de comando de voz            boolean
+WITH_HANDS_FREE_SYSTEM                   Con teléfono celular manos libres        boolean
+WITH_BLUETOOTH_SPEAKER                   Con viva-voz con sistema Bluetooth       boolean
+WITH_HEADLIGHTS_IGNITION_WHEN_RAIN       Con faros con encendido en caso de lluvia boolean
+FIPE_BRAND                               Marca FIPE                               string
+FIPE_MODEL                               Modelo FIPE                              string
+FIPE_VEHICLE_YEAR                        Año FIPE                                 string
+FIPE_PRICE                               Precio FIPE                              string
+PRICE_NEW                                Precio nuevo                             string
+PRICE_USED                               Precio usado                             string
+CURRENCY                                 Moneda                                   string
+ITEM_CONDITION                           Condición del ítem                       list
+LICENSE_PLATE_PARITY                     Paridad de la patente                    list
+LICENSE_PLATE_LAST_DIGIT                 Último dígito de la patente              number
+VEHICLE_LANDING                          Vehiculo visible en landings             string
+WITH_IRREGULAR_PRICE                     Con variación de precio                  boolean
+WITH_POSITIVE_IMPACT                     Con impacto positivo                     boolean

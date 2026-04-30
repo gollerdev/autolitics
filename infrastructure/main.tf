@@ -39,8 +39,9 @@ resource "aws_sqs_queue" "raw_queue" {
 
 # SQS queue — processed JSONL runs (processor → loader)
 resource "aws_sqs_queue" "processed_queue" {
-  name                      = var.processed_queue_name
-  message_retention_seconds = 86400
+  name                       = var.processed_queue_name
+  message_retention_seconds  = 86400
+  visibility_timeout_seconds = 360
 }
 
 # IAM user for the app
@@ -64,7 +65,7 @@ resource "aws_iam_policy" "app_policy" {
       },
       {
         Effect = "Allow"
-        Action = ["s3:PutObject"]
+        Action = ["s3:PutObject", "s3:GetObject", "s3:ListBucket"]
         Resource = [
           aws_s3_bucket.processed.arn,
           "${aws_s3_bucket.processed.arn}/*"
@@ -98,7 +99,8 @@ resource "aws_iam_policy" "app_policy" {
         ]
         Resource = [
           aws_ecr_repository.ingestor.arn,
-          aws_ecr_repository.processor.arn
+          aws_ecr_repository.processor.arn,
+          aws_ecr_repository.loader.arn
         ]
       },
       {
@@ -112,7 +114,10 @@ resource "aws_iam_policy" "app_policy" {
       {
         Effect   = "Allow"
         Action   = ["lambda:UpdateFunctionCode", "lambda:GetFunction", "lambda:GetFunctionConfiguration"]
-        Resource = "arn:aws:lambda:${var.aws_region}:${data.aws_caller_identity.current.account_id}:function:autolitics-processor"
+        Resource = [
+          "arn:aws:lambda:${var.aws_region}:${data.aws_caller_identity.current.account_id}:function:autolitics-processor*",
+          "arn:aws:lambda:${var.aws_region}:${data.aws_caller_identity.current.account_id}:function:autolitics-loader*"
+        ]
       },
       {
         Effect = "Allow"

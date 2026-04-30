@@ -21,3 +21,15 @@ variable "processed_bucket_name" {
 variable "processed_queue_name" {
   default = "autolitics-processed-queue"
 }
+
+variable "db_name" {
+  default = "autolitics"
+}
+
+variable "db_username" {
+  default = "autolitics"
+}
+
+variable "db_password" {
+  sensitive = true
+}
