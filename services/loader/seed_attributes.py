@@ -1,5 +1,5 @@
 """
-One-time script: loads attributes.json into dim_attribute and dim_attribute_value.
+One-time script: loads attributes.json into attribute_specs and attribute_spec_values.
 Safe to re-run — uses upsert (ON CONFLICT DO NOTHING).
 
 Usage:
@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 load_dotenv(override=False)
 
 SCHEMA = """
-CREATE TABLE IF NOT EXISTS dim_attribute (
+CREATE TABLE IF NOT EXISTS attribute_specs (
     attribute_id         TEXT PRIMARY KEY,
     name                 TEXT NOT NULL,
     value_type           TEXT,
@@ -27,9 +27,9 @@ CREATE TABLE IF NOT EXISTS dim_attribute (
     attribute_group_name TEXT
 );
 
-CREATE TABLE IF NOT EXISTS dim_attribute_value (
+CREATE TABLE IF NOT EXISTS attribute_spec_values (
     value_id     TEXT NOT NULL,
-    attribute_id TEXT NOT NULL REFERENCES dim_attribute(attribute_id),
+    attribute_id TEXT NOT NULL REFERENCES attribute_specs(attribute_id),
     name         TEXT NOT NULL,
     PRIMARY KEY (value_id, attribute_id)
 );
@@ -65,7 +65,7 @@ def seed(path: str) -> None:
             psycopg2.extras.execute_values(
                 cur,
                 """
-                INSERT INTO dim_attribute
+                INSERT INTO attribute_specs
                     (attribute_id, name, value_type, hierarchy, relevance,
                      attribute_group_id, attribute_group_name)
                 VALUES %s
@@ -85,7 +85,7 @@ def seed(path: str) -> None:
                 psycopg2.extras.execute_values(
                     cur,
                     """
-                    INSERT INTO dim_attribute_value (value_id, attribute_id, name)
+                    INSERT INTO attribute_spec_values (value_id, attribute_id, name)
                     VALUES %s
                     ON CONFLICT (value_id, attribute_id) DO NOTHING
                     """,

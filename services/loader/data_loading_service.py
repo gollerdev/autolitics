@@ -21,6 +21,7 @@ def process_message(message: dict) -> None:
     publisher = PostgresPublisher()
     try:
         publisher.insert_staging(cars, run_id)
+        publisher.insert_normalized(cars, run_id)
     finally:
         publisher.close()
 
